@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_gravity="center">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/border"
+            android:paddingBottom="1dp"
+            android:layout_marginBottom="10dp">
+            <Spinner
+                android:id="@+id/spinnerTypeReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="match_parent"
+                style="@style/Widget.AppCompat.Spinner"/>
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/etFNameReg"
+            android:background="@drawable/border"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/etLNameReg"
+            android:background="@drawable/border"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email-Id"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/etEmailReg"
+            android:background="@drawable/border"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/etPassReg"
+            android:background="@drawable/border"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/etCnfPassReg"
+            android:background="@drawable/border"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:id="@+id/bRegisterReg"/>
+
+    </LinearLayout>
+
+</ScrollView>

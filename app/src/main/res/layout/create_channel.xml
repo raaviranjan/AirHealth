@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:id="@+id/loginLayout"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/map_logo"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Machine Id"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/etId"
+            android:background="@drawable/border"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/etPass"
+            android:background="@drawable/border"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:padding="1dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Geo Location"
+                android:layout_weight="30"
+                android:id="@+id/etGeo"
+                android:background="@drawable/border"/>
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:src="@drawable/small_loc_icon"
+                android:layout_weight="70"
+                android:id="@+id/ibloc"
+                android:background="@drawable/border"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:id="@+id/bCreate"/>
+    </LinearLayout>
+</RelativeLayout>
