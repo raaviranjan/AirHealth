@@ -20,25 +20,25 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/car1"
+                android:src="@drawable/slideshow1"
                 android:id="@+id/iv1"/>
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/car2"
+                android:src="@drawable/slideshow2"
                 android:id="@+id/iv2"/>
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/car3"
+                android:src="@drawable/slideshow3a"
                 android:id="@+id/iv3"/>
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/car4"
+                android:src="@drawable/slideshow4a"
                 android:id="@+id/iv4"/>
 
         </ViewFlipper>

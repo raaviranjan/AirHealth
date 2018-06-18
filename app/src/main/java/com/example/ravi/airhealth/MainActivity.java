@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        getSupportActionBar().hide();
+
         preferences = getSharedPreferences("SHAR_PREF_NAME", MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putBoolean("login", false);
@@ -159,17 +161,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_currentLoc) {
-            Fragment fragment=new CurrentLoc();
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.content_frame, fragment);
-            ft.commit();
-        } else if (id == R.id.nav_create_channel) {
+        if (id == R.id.nav_create_channel) {
             Fragment fragment=new CreateChannel();
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.content_frame, fragment);
             ft.commit();
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_my_channel) {
 
         } else if (id == R.id.nav_manage) {
 

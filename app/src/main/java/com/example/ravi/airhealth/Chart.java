@@ -26,6 +26,7 @@ import static android.content.Context.MODE_PRIVATE;
 public class Chart extends Fragment {
     WebView mWebView1;
     TextView tvLoc;
+    String channel;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle savedInstanceState){
 
@@ -40,6 +41,7 @@ public class Chart extends Fragment {
         tvLoc = view.findViewById(R.id.tvLoc);
         Bundle bundle = getArguments();
         tvLoc.setText(bundle.getString("CurrentLoc"));
+        channel = bundle.getString("ChannelID");
 
         mWebView1.getSettings().setJavaScriptEnabled(true);
         final ProgressDialog pd = ProgressDialog.show(getActivity(), "", "Please wait...", true);
@@ -64,7 +66,7 @@ public class Chart extends Fragment {
 
     });
 
-        mWebView1.loadUrl("http://www.airhealth.info/chart-view/pollution/");
+        mWebView1.loadUrl("http://www.airhealth.info/chart-view/pollution/"+channel);
 
         return view;
 
